@@ -20,6 +20,8 @@ def check_line(board, king_row, king_col, row_move, col_move, attackers):
 
 
 def checkmate(board):
+    if not isinstance(board, str):
+        return
     rows = board.splitlines()
     size = len(rows)
 
